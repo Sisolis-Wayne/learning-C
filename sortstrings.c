@@ -3,10 +3,16 @@
 
 int main(void)
 {
-	char str1[10] = "anaconda";
-	char str2[10] = "aconda";
+	char str1[10];
+	char str2[10];
 	int m, j, p;
 	int len1, len2;
+
+	printf("Enter the first string: ");
+	scanf("%s", str1);
+
+	printf("Enter the second string: ");
+	scanf("%s", str2);
 
 	len1 = strlen(str1);
 	len2 = strlen(str2);
@@ -42,7 +48,7 @@ int main(void)
 		}
 		if (str1[m] == str2[m])
 		{
-			if (m == j -1)
+			if (m == j - 1)
 			{
 				p = str1[m] - str2[m];
 				printf("%d --- loop %d\n", p, m);
